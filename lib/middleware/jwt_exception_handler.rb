@@ -1,4 +1,4 @@
-# lib/middleware/jwt_exception_handler.rb
+module Middleware
 class JwtExceptionHandler
   def initialize(app)
     @app = app
@@ -33,4 +33,5 @@ class JwtExceptionHandler
       [ body.to_json ]
     ]
   end
+end
 end
