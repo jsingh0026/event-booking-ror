@@ -13,7 +13,7 @@ services:
           name: my-db
           property: connectionString
       - key: REDIS_URL
-        value: redis://default:ATbrAAIjcDFlMzhiYjFiYjQ4MDE0N2RjODc5NjA3OTljMTdkNTRmNXAxMA@close-seal-14059.upstash.io:6379
+        value: rediss://default:ATbrAAIjcDFlMzhiYjFiYjQ4MDE0N2RjODc5NjA3OTljMTdkNTRmNXAxMA@close-seal-14059.upstash.io:6379
 
   - type: worker
     name: sidekiq-worker
@@ -28,7 +28,7 @@ services:
           name: my-db
           property: connectionString
       - key: REDIS_URL
-        value: redis://default:ATbrAAIjcDFlMzhiYjFiYjQ4MDE0N2RjODc5NjA3OTljMTdkNTRmNXAxMA@close-seal-14059.upstash.io:6379
+        value: rediss://default:ATbrAAIjcDFlMzhiYjFiYjQ4MDE0N2RjODc5NjA3OTljMTdkNTRmNXAxMA@close-seal-14059.upstash.io:6379
 
 databases:
   - name: my-db
