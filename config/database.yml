@@ -79,10 +79,8 @@ test:
 #
 production:
   primary: &primary_production
-    <<: *default
-    database: my_api_app_production
-    username: my_api_app
-    password: <%= ENV["MY_API_APP_DATABASE_PASSWORD"] %>
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   cache:
     <<: *primary_production
     database: my_api_app_production_cache
