@@ -3,7 +3,7 @@ services:
     name: my-rails-api
     env: ruby
     plan: free
-    buildCommand: "./bin/render-build.sh"
+    buildCommand: bundle install && bundle exec rake db:migrate
     startCommand: bundle exec rails server
     envVars:
       - key: RAILS_MASTER_KEY
